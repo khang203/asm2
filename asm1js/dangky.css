@@ -1,0 +1,188 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#content {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    width: 700px;
+    margin: auto;
+    border: 2px solid rgb(141, 240, 193);
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(252, 247, 247);
+}
+
+#content h1 {
+    height: 70px;
+    width: 698px;
+    margin-top: 55px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid rgb(141, 240, 193);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(46, 209, 230);
+    color: white;
+    font-weight: bolder;
+}
+
+#frames2,
+#frames {
+    padding-left: 12px;
+    padding-top: 12px;
+    height: 30px;
+    width: 590px;
+    margin-left: 49px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+legend {
+    padding-left: 50px;
+    margin: 10px 0px;
+    width: 150px;
+    display: inline-block;
+    color: black;
+}
+
+.dk,
+.note {
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 14px;
+}
+
+.select {
+    width: 600px;
+    margin-left: 50px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.but {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    font-size: 1em;
+    background-color: rgb(46, 209, 230);
+    color: white;
+    font-weight: bolder;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    color: rgb(42, 52, 165);
+    cursor: pointer;
+}
+
+.p {
+    font-style: italic;
+    margin-left: 60px;
+    margin-top: 0;
+    color: red;
+}
+
+span {
+    visibility: hidden;
+}
+
+.form-group.error span {
+    visibility: visible;
+    font-style: italic;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: red;
+}
+
+.form-group.success .note,
+.form-group.success .dk {
+    border: 2px solid green;
+}
+
+.main .layer1 {
+    background-color: rgb(49, 48, 48);
+    padding-bottom: 20px;
+    width: 100%;
+    position: absolute;
+}
+
+.main .layer1 .text1>ul>li {
+    color: aliceblue;
+    list-style: none;
+    float: left;
+    padding: 0px 40px 0px 40px;
+    background-color: rgb(49, 48, 48);
+}
+
+.main .layer1 .text1 ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+    padding: 0 3px;
+    font-size: 16px;
+}
+
+.main .layer1 .text1 ul li a:hover {
+    background-color: rgb(49, 48, 48);
+    color: rgb(190, 190, 190);
+    background-position: center;
+    font-size: 25px;
+}
+
+.main .layer1 .icon1 a {
+    position: absolute;
+    left: 1350px;
+    color: white;
+    font-size: 25px;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.main .layer1 .icon1 a:hover {
+    background-position: center;
+    font-size: 30px;
+    color: blue;
+}
+
+.main .layer1 .icon2 a {
+    position: absolute;
+    left: 1400px;
+    color: white;
+    font-size: 25px;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.main .layer1 .icon2 a:hover {
+    background-position: center;
+    font-size: 30px;
+    color: red;
+}
+
+.main .layer1 .icon3 a {
+    position: absolute;
+    left: 1450px;
+    color: white;
+    font-size: 25px;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.main .layer1 .icon3 a:hover {
+    background-position: center;
+    font-size: 30px;
+    color: fuchsia;
+}

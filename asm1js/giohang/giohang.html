@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[ type="number"] {
+        width: 30px;
+    }
+    
+    label {
+        font-size: 20px;
+        color: rgb(255, 0, 30);
+    }
+    
+    label:hover {
+        cursor: pointer;
+        font-size: 150%;
+        color: rgb(54, 2, 242);
+    }
+</style>
+
+<body>
+
+    <table id="tblSanPham" border="1" width="50%">
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>giá tiền</th>
+            <th></th>
+
+        </tr>
+        <tr>
+            <td>nokia 1280</td>
+            <td>$250</td>
+            <td>
+                <button type="button" onclick="them(this)">thêm</button>
+            </td>
+        </tr>
+        <tr>
+            <td>iphone</td>
+            <td>$1000</td>
+            <td>
+                <button type="button" onclick="them(this)">thêm</button>
+            </td>
+        </tr>
+        <tr>
+            <td>oppo</td>
+            <td>$300</td>
+            <td>
+                <button type="button" onclick="them(this)">thêm</button>
+            </td>
+        </tr>
+        <tr>
+            <td>samsung galaxy</td>
+            <td>$500</td>
+
+            <td>
+                <button type="button" onclick="them(this)">thêm</button>
+
+            </td>
+        </tr>
+    </table>
+    <table>
+        <H1> Giỏ Hàng</H1>
+        <table id="tbGioHang" border="1" width="50%">
+            <tr>
+                <td>Tên sản phẩm</td>
+                <td>Giá Tiền </td>
+                <td>số lượng </td>
+                <td></td>
+            </tr>
+        </table>
+        <h2> Tổng Tiền: <span>$0</span></h2>
+    </table>
+    </div>
+</body>
+
+</html>
+<script src="giohang.js"></script>

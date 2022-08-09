@@ -1,0 +1,573 @@
+    .main .layer1 {
+        background-color: rgb(49, 48, 48);
+        padding-bottom: 20px;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .logo {
+        text-align: center;
+    }
+    
+    .main .layer1 .text1>ul>li {
+        color: aliceblue;
+        list-style: none;
+        float: left;
+        padding: 0px 40px 0px 40px;
+        background-color: rgb(49, 48, 48);
+    }
+    
+    .main .layer1 .text1 ul li a {
+        color: aliceblue;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.2s;
+        padding: 0 3px;
+        font-size: 16px;
+    }
+    
+    .main .layer1 .text1 ul li a:hover {
+        background-color: rgb(49, 48, 48);
+        color: rgb(190, 190, 190);
+        background-position: center;
+        font-size: 25px;
+    }
+    
+    .main .layer1 .icon1 a {
+        position: absolute;
+        left: 1350px;
+        color: white;
+        font-size: 25px;
+        top: 20px;
+        transition: 0.5s;
+    }
+    
+    .main .layer1 .icon1 a:hover {
+        background-position: center;
+        font-size: 30px;
+        color: blue;
+    }
+    
+    .main .layer1 .icon2 a {
+        position: absolute;
+        left: 1400px;
+        color: white;
+        font-size: 25px;
+        top: 20px;
+        transition: 0.5s;
+    }
+    
+    .main .layer1 .icon2 a:hover {
+        background-position: center;
+        font-size: 30px;
+        color: red;
+    }
+    
+    .main .layer1 .icon3 a {
+        position: absolute;
+        left: 1450px;
+        color: white;
+        font-size: 25px;
+        top: 20px;
+        transition: 0.5s;
+    }
+    
+    .main .layer1 .icon3 a:hover {
+        background-position: center;
+        font-size: 30px;
+        color: fuchsia;
+    }
+    
+    .main .layer2 .title h1 {
+        position: absolute;
+        left: 500px;
+        top: 200px;
+        font-size: 200px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.5s;
+    }
+    
+    .sale>img {
+        border-radius: 20px;
+        border-color: blue;
+        filter: brightness(70%);
+    }
+    
+    .next>img {
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+    
+    .next>i {
+        position: absolute;
+        z-index: 1000;
+        font-size: 50px;
+        color: rgb(128, 120, 120);
+    }
+    
+    .next>i:hover {
+        cursor: pointer;
+        color: rgb(110, 112, 114)
+    }
+    
+    .next>.btnright {
+        right: 5px;
+        top: 1500px;
+    }
+    
+    .next>.btnleft {
+        left: 5px;
+        top: 1500px;
+        margin-left: 15px;
+    }
+    
+    .main .layer2 .title1 h1 {
+        position: absolute;
+        left: 730px;
+        top: 290px;
+        font-size: 60px;
+        color: palevioletred;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+    
+    .main .layer2 h1:hover {
+        background-position: left;
+        color: yellow;
+    }
+    
+    .main .layer3 {
+        padding: 100px 150px;
+        position: absolute;
+        background-color: palevioletred;
+        top: 590px;
+        left: 200px;
+        border: 10px solid white;
+        border-radius: 20px;
+        border-color: aliceblue;
+        transition: 0.5s;
+    }
+    
+    .main .layer3 .text2 h1 {
+        color: aliceblue;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 60px;
+        right: 80px;
+        position: absolute;
+    }
+    
+    .main .layer3 .text3 h1 {
+        color: aliceblue;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .main .layer3 .line p {
+        color: aliceblue;
+        position: absolute;
+        right: 80px;
+        top: 170px;
+    }
+    
+    .main .layer3 .text4 h1 {
+        color: aliceblue;
+        position: absolute;
+        right: 150px;
+        top: 230px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .main .layer3:hover {
+        filter: brightness(80%);
+        background-position: center;
+    }
+    
+    .main .layer4 {
+        padding: 100px 150px;
+        position: absolute;
+        background-color: rgb(248, 248, 248);
+        top: 680px;
+        left: 600px;
+        border: 10px solid white;
+        border-radius: 20px;
+        border-color: palevioletred;
+        transition: 0.5s;
+    }
+    
+    .main .layer4 .text4 h1 {
+        color: palevioletred;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 60px;
+        left: 40px;
+        position: absolute;
+    }
+    
+    .main .layer4 .text5 h1 {
+        color: palevioletred;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .main .layer4 .line p {
+        color: palevioletred;
+        position: absolute;
+        left: 70px;
+        top: 170px;
+    }
+    
+    .main .layer4 .text6 h1 {
+        color: palevioletred;
+        position: absolute;
+        right: 135px;
+        top: 230px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .main .layer4:hover {
+        filter: brightness(85%);
+        background-position: center;
+    }
+    
+    .main .layer1 .text1 ul.menucon {
+        position: absolute;
+        list-style: none;
+        display: none;
+        width: 150px;
+        top: 60px;
+        left: 250px;
+        height: 100px;
+        background-color: black;
+    }
+    
+    .main .layer8 h2 {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        position: absolute;
+        text-align: center;
+        left: 110px;
+        top: 2160px;
+    }
+    
+    .main .layer8>img {
+        border-radius: 10px;
+        margin-left: 5%;
+    }
+    
+    .main .layer8 .text1 {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        font-size: .8125rem;
+        text-align: left;
+        position: absolute;
+        left: 110px;
+        top: 2240px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .main .layer8 .text1 a {
+        color: rgb(5, 5, 5);
+        text-decoration: underline;
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        cursor: pointer;
+        margin-left: 230px;
+    }
+    
+    .main .layer8 .text1 a:hover {
+        font-size: medium;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    .main .layer7 p {
+        color: rgb(70, 71, 72);
+        font-size: 30px;
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+    }
+    /* sản phẩm */
+    
+    .main .layer9 a {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        margin-left: 30px;
+    }
+    
+    .main .layer9 p {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    
+    .main .layer9 p:hover {
+        font-size: 25px;
+        cursor: pointer;
+        color: rgb(118, 117, 117);
+    }
+    
+    .main .layer9>img {
+        margin-left: 30px;
+        margin-right: 5px;
+    }
+    
+    .main .layer10 a {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        margin-left: 30px;
+    }
+    
+    .main .layer10 p {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    
+    .main .layer10 p:hover {
+        font-size: 25px;
+        cursor: pointer;
+        color: rgb(118, 117, 117);
+    }
+    
+    .main .layer10>img {
+        margin-left: 30px;
+        margin-right: 5px;
+    }
+    
+    .main .layer11 a {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        margin-left: 30px;
+    }
+    
+    .main .layer11 p {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    
+    .main .layer11 p:hover {
+        font-size: 25px;
+        cursor: pointer;
+        color: rgb(118, 117, 117);
+    }
+    
+    .main .layer11>img {
+        margin-left: 30px;
+        margin-right: 5px;
+    }
+    
+    .main .layer12 a {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        margin-left: 30px;
+    }
+    
+    .main .layer12 p {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    
+    .main .layer12 p:hover {
+        font-size: 25px;
+        cursor: pointer;
+        color: rgb(118, 117, 117);
+    }
+    
+    .main .layer12>img {
+        margin-left: 30px;
+        margin-right: 5px;
+    }
+    /* Footer */
+    
+    .footer {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px 50px;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .footer .noi-dung {
+        margin-right: 30px;
+    }
+    
+    .footer .noi-dung.about {
+        width: 30%;
+    }
+    
+    .footer .noi-dung.about p {
+        color: rgb(0, 0, 0);
+    }
+    
+    .footer .noi-dung.about h2 {
+        position: relative;
+        color: rgb(0, 0, 0);
+        font-weight: 450;
+        margin-bottom: 15px;
+    }
+    
+    .footer .noi-dung.about h2:before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+    }
+    
+    .links h2 {
+        position: relative;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    .links h2::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+    }
+    
+    .links {
+        position: relative;
+        width: 30%;
+    }
+    
+    .links div p {
+        list-style: none;
+    }
+    
+    .links div p a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    
+    .links div p a:hover {
+        color: rgb(255, 0, 0);
+    }
+    
+    .contact h2 {
+        position: relative;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    .contact h2::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+    }
+    
+    .contact {
+        width: calc(35% - 60px);
+        margin-right: 0 !important;
+    }
+    
+    .contact .info {
+        position: relative;
+    }
+    
+    .contact .info li {
+        display: flex;
+        margin-bottom: 16px;
+    }
+    
+    .contact .info li span {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    .contact .info li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    /* bổ sung layer 1 */
+    
+    .main .layer1 .text1 ul .menucon a {
+        padding: 0 7px;
+        text-align: center;
+    }
+    
+    .main .layer1 .text1 li:hover>ul.menucon {
+        display: block;
+    }
+    
+    body {
+        background-color: rgb(247, 255, 255);
+    }
+    
+    .layer2>.logo {
+        text-align: center;
+    }
+    /* responsive */
+    
+    .btn-toggle-menu {
+        cursor: pointer;
+        display: none;
+    }
+    
+    #toggle-menu {
+        display: none;
+    }
+    
+    @media screen and (max-width:768px) {
+        nav {
+            flex-wrap: wrap;
+        }
+        .menu {
+            display: none;
+        }
+        .btn-toggle-menu {
+            display: unset;
+        }
+        #toggle-menu:checked+.menu {
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    .menu {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    .menu li {
+        margin-left: 10px;
+    }
+    
+    .menu li a {
+        display: block;
+        padding: 8px 15px;
+        font-weight: bold;
+        border-radius: 15px;
+        transition: 0.4s;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    nav {
+        background-color: aliceblue;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 25px;
+    }

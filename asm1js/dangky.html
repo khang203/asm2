@@ -1,0 +1,234 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="dangky.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+
+<body>
+    <div class="main">
+
+        <div class="layer1">
+            <div class="icon1">
+
+                <a href="https://www.facebook.com/Dior?msclkid=50146b92a8d811ecad91a43ad4aaf011"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="icon2">
+                <a href="https://www.youtube.com/channel/UC6xD-jKli-_qIYXDTsNv4dw"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="icon3">
+                <a href="https://www.dior.com/en_vn?msclkid=8904b2e5a8d811ecbe6bf3cd14d1b0cf"><i class="fas fa-search"></i></a>
+            </div>
+
+            <div class="text1">
+                <ul>
+
+                    <li>
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="sanpham.html">Sản Phẩm</a>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="#">Cửa hàng</a>
+
+                    </li>
+                    <li>
+                        <a href="login.html">Đăng nhập</a>
+
+                    </li>
+                    <li>
+
+                        <a href="dangky.html">Đăng ký</a>
+
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="khung">
+                <div class="tittle">
+                    <h1>Đăng ký thành viên</h1>
+                </div>
+                <div id="noidung">
+                    <form id="form">
+                        <div class="form-group">
+                            <legend>Mã sinh viên</legend>
+                            <input type="text" class="dk" id="msv" minlength="7" placeholder="Ví dụ: PS12345">
+                            <span></span>
+                        </div>
+                        <div class="form-group">
+                            <legend>Họ và Tên</legend>
+                            <input type="text" class="dk" id="name" minlength="4" maxlength="40" placeholder="Nhập từ 4 đến 40 ký tự"><br>
+                            <span></span>
+                        </div>
+                        <div class="form-group">
+                            <legend>Email</legend>
+                            <input type="email" class="dk" id="email" minlength="4" maxlength="50" placeholder="Ví dụ: chutichnuoc2022    @gmail.com"><br>
+                            <span></span>
+                        </div>
+                        <div class="form-group">
+                            <legend>Giới tính</legend>
+                            <div id="frames">
+                                <div class="nho">
+                                    <input type="radio" name="gender"> Nam
+                                    <input type="radio" name="gender"> Nữ
+                                </div>
+                            </div>
+                            <p class="gender p"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <legend>Sở thích</legend>
+                            <div id="frames2">
+                                <div class="nho">
+                                    <input type="checkbox" name="checkbox">
+                                    <label>Đọc sách</label>
+                                    <input type="checkbox" name="checkbox">
+                                    <label>Du lịch</label>
+                                    <input type="checkbox" name="checkbox">
+                                    <label>Âm nhạc</label>
+                                    <input type="checkbox" name="checkbox">
+                                    <label>Ẩm thực</label>
+                                    <input type="checkbox" name="checkbox">
+                                    <label>Khác</label>
+                                </div>
+                            </div>
+                            <p class="hobby p"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <legend>Quốc tịch</legend>
+                            <select name="select" class="select" id="nationality">
+                            <option value="0">Chọn Quốc Tịch</option>
+                            <option value="1">Việt Nam</option>
+                            <option value="2">China</option>
+                            <option value="3">Japan</option>
+                            <option value="4">Korea</option>
+                        </select>
+                            <p class="nationality p"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <legend>Ghi chú</legend>
+                            <textarea type="textarea" class="note" id="note" rows="5" placeholder="Giới thiệu bản thân bạn (không bắt buộc)"></textarea><br>
+                            <span></span>
+                        </div>
+
+                        <div class="but">
+                            <br><button class="button">Đăng ký</button>
+                            <button type="submit" class="button">Nhập lại</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    var $ = document.querySelector.bind(document)
+    var $$ = document.querySelectorAll.bind(document)
+
+    var form = $('#form')
+    var mssv = $('#msv')
+    var fullName = $('#name')
+    var email = $('#email')
+    var genders = $$('input[name="gender"]')
+    var interests = $$('input[name="checkbox"]')
+    var nationality = $('#nationality')
+    var note = $('#note')
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        validator()
+    })
+
+    function validator() {
+        //Không để trống: mã, họ tên và email
+        if (mssv.value === '') {
+            errorMessage(mssv, 'Không để trống mã')
+        } else {
+            successMessage(mssv)
+        }
+
+        //Không để trống họ tên 
+        if (fullName.value === '') {
+            errorMessage(fullName, 'Không để trống họ tên ')
+        } else {
+            successMessage(fullName)
+        }
+
+        //Không để trống email 
+        if (email.value === '') {
+            errorMessage(email, 'Không để trống email ')
+        } else {
+            successMessage(email)
+        }
+
+        //Phải chọn giới tính
+        if (!genders[0].checked && !genders[1].checked) {
+            $('.gender').innerText = 'Phải chọn giới tính'
+        } else {
+            $('.gender').innerText = ''
+            $('#frames').style.background = 'none'
+            $('#frames').style.borderColor = 'green'
+        }
+
+        //Phải chọn sở thích 
+        var check = 0
+        for (var i = 0; i < interests.length; i++) {
+            if (interests[i].checked == true) {
+                check++
+            }
+        }
+        if (check == 0) {
+            $('.hobby').innerText = 'Phải chọn sở thích'
+        } else {
+            $('.hobby').innerText = ''
+            $('#frames2').style.background = 'none'
+            $('#frames2').style.borderColor = 'green'
+        }
+
+        //Phải chọn quốc tịch
+        if (nationality.value == 0) {
+            $('.nationality').innerText = 'Phải chọn quốc tịch'
+        } else {
+            $('.nationality').innerText = ''
+            $('select').style.background = 'none'
+            $('select').style.borderColor = 'green'
+        }
+
+        //Ít hơn 200 ký tự: ghi chú
+        if (note.value.length > 200) {
+            errorMessage(note, 'Ít hơn 200 ký tự')
+        } else {
+            successMessage(note)
+        }
+    }
+
+    //set lỗi
+    function errorMessage(input, message) {
+        var formGroup = input.parentElement
+        var span = formGroup.querySelector('span')
+        formGroup.className = 'form-group error'
+        span.innerText = message
+    }
+
+    //set thành công
+    function successMessage(input) {
+        var formGroup = input.parentElement
+        formGroup.className = 'form-group success'
+    }
+</script>
+
+</html>
